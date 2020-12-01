@@ -45,7 +45,6 @@ CREATE TABLE IF NOT EXISTS `Restaurante`.`Restaurante` (
   `Localidade` VARCHAR(50) NOT NULL,
   `Sede_NIF` INT NOT NULL,
   `Capacidade` INT NOT NULL,
-  `Categoria` VARCHAR(20) NULL,
   PRIMARY KEY (`NIF`),
   INDEX `fk_Restaurante_Sede_idx` (`Sede_NIF` ASC) VISIBLE,
   CONSTRAINT `fk_Restaurante_Sede`
@@ -92,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `Restaurante`.`Funcionario` (
   `Telefone` VARCHAR(20) NOT NULL,
   `Nome` VARCHAR(50) NOT NULL,
   `Data_nascimento` DATE NOT NULL,
-  `Tipo` VARCHAR(20) NOT NULL,
+  `Funcao` VARCHAR(20) NOT NULL,
   `Restaurante_NIF` INT NOT NULL,
   `Genero` VARCHAR(45) NOT NULL,
   `Nacionalidade` VARCHAR(45) NOT NULL,

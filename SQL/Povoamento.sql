@@ -3,11 +3,11 @@ use restaurante;
 insert into Sede values (245654378, 'sede@quartelgrill.com', '224567653', 'André Martins', 'Praceta do Vilar', '4710-453', 'Braga');
 
 insert into Restaurante values 
-	(478364835, 'braga@quartelgrill.com', '225765926', 'António Rodrigues', 'Rua da Liberdade', '2345-156', 'Braga', 245654378, 4, 'Grill'),
-	(873234798, 'porto@quartelgrill.com', '228567341', 'Matilde Santos', 'Travessa da Liberdade', '7363-789', 'Porto', 245654378, 109, 'Grill'),
-    (123567432, 'pacos@quartelgrill.com', '255735100', 'Paulo Costela', 'Rotunda da Liberdade', '6738-243', 'Pacos de Ferreiro', 245654378, 29, 'Grill'),
-    (123456789, 'viseu@quartelgrill.com', '232232232', 'Óscar Dias', 'Praceta da Liberdade', '1234-123', 'Viseu', 245654378, 61, 'Grill'),
-    (343278934, 'vilaconde@quartelgrill.com', '229876543', 'João Pinto', 'Avenida da Liberdade', '7363-789', 'Vila do Conde', 245654378, 14, 'Grill');
+	(478364835, 'braga@quartelgrill.com', '225765926', 'António Rodrigues', 'Rua da Liberdade', '2345-156', 'Braga', 245654378, 4),
+	(873234798, 'porto@quartelgrill.com', '228567341', 'Matilde Santos', 'Travessa da Liberdade', '7363-789', 'Porto', 245654378, 109),
+    (123567432, 'pacos@quartelgrill.com', '255735100', 'Paulo Costela', 'Rotunda da Liberdade', '6738-243', 'Pacos de Ferreiro', 245654378, 29),
+    (123456789, 'viseu@quartelgrill.com', '232232232', 'Óscar Dias', 'Praceta da Liberdade', '1234-123', 'Viseu', 245654378, 61),
+    (343278934, 'vilaconde@quartelgrill.com', '229876543', 'João Pinto', 'Avenida da Liberdade', '7363-789', 'Vila do Conde', 245654378, 14);
     
 insert into ItemMenu values
 	(1, 'Costela de Porco', 'Carne', 'Acompanhamento: Arroz e batata frita', 6, 'Prato Principal'),
