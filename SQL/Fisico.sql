@@ -11,7 +11,7 @@ SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,N
 -- -----------------------------------------------------
 -- Schema Restaurante
 -- -----------------------------------------------------
-drop schema Restaurante;
+DROP SCHEMA `Restaurante`;
 CREATE SCHEMA IF NOT EXISTS `Restaurante` DEFAULT CHARACTER SET utf8 ;
 USE `Restaurante` ;
 
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `Restaurante`.`Funcionario` (
   `Telefone` VARCHAR(20) NOT NULL,
   `Nome` VARCHAR(50) NOT NULL,
   `Data_nascimento` DATE NOT NULL,
-  `Funcao` VARCHAR(20) NOT NULL,
+  `Função` VARCHAR(20) NOT NULL,
   `Restaurante_NIF` INT NOT NULL,
   `Genero` VARCHAR(45) NOT NULL,
   `Nacionalidade` VARCHAR(45) NOT NULL,
@@ -116,7 +116,7 @@ CREATE TABLE IF NOT EXISTS `Restaurante`.`Fatura` (
   `IVA` DECIMAL(3,2) NOT NULL,
   `Funcionario_Numero` INT NOT NULL,
   `Tipo_Pagamento` VARCHAR(45) NOT NULL,
-  `Data` DATETIME NOT NULL,
+  `Data_Emissao` DATETIME NOT NULL,
   PRIMARY KEY (`Numero`),
   INDEX `fk_Fatura_Funcionario1_idx` (`Funcionario_Numero` ASC) VISIBLE,
   CONSTRAINT `fk_Fatura_Funcionario1`

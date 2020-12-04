@@ -50,21 +50,21 @@ insert into Fornecedor values
     (111111117, 'entregas@mariabolacha.com', '225242567', 'Bolos', 'Maria Bolacha'); 
     
 insert into Fatura values
-	(1, 0, null, null, 0.23, 14, 'Dinheiro', '2020-8-15'),
-    (2, 0, 125432357, 'Luís Sousa', 0.23, 12, 'Cartao', '2020-9-3'),
-    (3, 0, null, null, 0.23, 10, 'Dinheiro', '2020-9-11'),
-    (4, 0, null, null, 0.23, 10, 'Cartao', '2020-9-20'),
-    (5, 0, 193747463, 'Rui Vieira', 0.23, 11, 'Cartao', '2020-10-5'),
-    (6, 0, null, null, 0.23, 15, 'Dinheiro', '2020-10-14'),
-    (7, 0, 594738379, 'Novo Banco', 0.23, 14, 'Dinheiro', '2020-10-17'),
-    (8, 0, null, null, 0.23, 14, 'Dinheiro', '2020-10-20'),
-    (9, 0, null, null, 0.23, 12, 'Cartao', '2020-10-26'),
-    (10, 0, 736464738, 'Pedro Faria', 0.23, 11, 'Cheque', '2020-11-4'),
-    (11, 0, null, null, 0.23, 10, 'Dinheiro', '2020-11-9'),
-    (12, 0, null, null, 0.23, 13, 'Dinheiro', '2020-11-14'),
-    (13, 0, null, null, 0.23, 13, 'Dinheiro', '2020-11-17'),
-    (14, 0, null, null, 0.23, 12, 'Cartao', '2020-11-23'),
-    (15, 0, null, null, 0.23, 15, 'Cheque', '2020-11-29');
+	(1, 19, null, null, 0.23, 14, 'Dinheiro', '2020-8-15'),
+    (2, 20, 125432357, 'Luís Sousa', 0.23, 12, 'Cartao', '2020-9-3'),
+    (3, 45, null, null, 0.23, 10, 'Dinheiro', '2020-9-11'),
+    (4, 86, null, null, 0.23, 10, 'Cartao', '2020-9-20'),
+    (5, 35, 193747463, 'Rui Vieira', 0.23, 11, 'Cartao', '2020-10-5'),
+    (6, 82, null, null, 0.23, 15, 'Dinheiro', '2020-10-14'),
+    (7, 180, 594738379, 'Novo Banco', 0.23, 14, 'Dinheiro', '2020-10-17'),
+    (8, 83, null, null, 0.23, 14, 'Dinheiro', '2020-10-20'),
+    (9, 82, null, null, 0.23, 12, 'Cartao', '2020-10-26'),
+    (10, 64, 736464738, 'Pedro Faria', 0.23, 11, 'Cheque', '2020-11-4'),
+    (11, 10, null, null, 0.23, 10, 'Dinheiro', '2020-11-9'),
+    (12, 13, null, null, 0.23, 13, 'Dinheiro', '2020-11-14'),
+    (13, 100, null, null, 0.23, 13, 'Dinheiro', '2020-11-17'),
+    (14, 50, null, null, 0.23, 12, 'Cartao', '2020-11-23'),
+    (15, 20, null, null, 0.23, 15, 'Cheque', '2020-11-29');
     
 insert into Restaurante_has_Fornecedor values
 	(478364835, 111111111),
@@ -89,7 +89,6 @@ insert into Restaurante_has_Fornecedor values
     (343278934, 111111117);
     
 insert into Restaurante_has_ItemMenu values
-
 	(478364835, 1),
     (478364835, 2),
     (478364835, 3),
@@ -136,7 +135,6 @@ insert into Restaurante_has_ItemMenu values
     (343278934, 11);
     
 insert into Fatura_has_ItemMenu values
-    
 	(1, 1, 2),
     (1, 12, 2),
     
