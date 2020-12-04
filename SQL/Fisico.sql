@@ -75,7 +75,7 @@ ENGINE = InnoDB;
 CREATE TABLE IF NOT EXISTS `Restaurante`.`Fornecedor` (
   `NIF` INT NOT NULL,
   `Email` VARCHAR(45) NOT NULL,
-  `Telefone` INT NOT NULL,
+  `Telefone` VARCHAR(20) NOT NULL,
   `Tipo` VARCHAR(20) NOT NULL,
   `Nome` VARCHAR(50) NOT NULL,
   PRIMARY KEY (`NIF`))
