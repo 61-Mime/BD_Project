@@ -1,4 +1,3 @@
-drop Procedure insere_fatura;
 DELIMITER //
 CREATE PROCEDURE insere_fatura (IN nr INT, IN preco Decimal(6,2), IN nif INT, IN nome_cli VARCHAR(50), 
 									IN iva Decimal(3,2), IN nr_funcionario INT, IN tipo_pagamento VARCHAR(45), IN data1 DATE)
@@ -73,32 +72,6 @@ CREATE PROCEDURE insere_restaurante (IN nif INT, IN email VARCHAR(100), IN tel V
 				(NIF,Email,Telefone,Nome_gerente,Rua,Codigo_postal,Localidade,Sede_NIF,Capacidade)
 				VALUES
 				(nif,email,tel,gerente,rua,cp,localidade,nif_sede,capacidade);
-		COMMIT;
-	END //
-
-
-CREATE PROCEDURE insere_sede (IN nif INT, IN email VARCHAR(100), IN tel VARCHAR(20), IN diretor VARCHAR(50), IN rua VARCHAR(75),
-									 IN cp VARCHAR(20), IN localidade VARCHAR(50))
-	BEGIN
-		DECLARE exit handler for SQLEXCEPTION
-			BEGIN
-				SHOW ERRORS LIMIT 1;
-                SHOW WARNINGS;
-                ROLLBACK;
-			END;
-		
-        DECLARE exit handler for SQLWARNING
-			BEGIN
-				SHOW ERRORS LIMIT 1;
-                SHOW WARNINGS;
-                ROLLBACK;
-			END;
-    
-		START TRANSACTION;
-			INSERT INTO Sede
-				(NIF,Email,Telefone,Nome_diretor,Rua,Codigo_postal,Localidade)
-				VALUES
-				(nif,email,tel,diretor,rua,cp,localidade);
 		COMMIT;
 	END //
   
