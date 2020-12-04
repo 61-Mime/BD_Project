@@ -119,6 +119,7 @@ CREATE TABLE IF NOT EXISTS `Restaurante`.`Fatura` (
   `Data_Emissao` DATETIME NOT NULL,
   PRIMARY KEY (`Numero`),
   INDEX `fk_Fatura_Funcionario1_idx` (`Funcionario_Numero` ASC) VISIBLE,
+  UNIQUE INDEX `NIF_Cliente_UNIQUE` (`NIF_Cliente` ASC) VISIBLE,
   CONSTRAINT `fk_Fatura_Funcionario1`
     FOREIGN KEY (`Funcionario_Numero`)
     REFERENCES `Restaurante`.`Funcionario` (`Numero`)
