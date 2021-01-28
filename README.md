@@ -1,8 +1,9 @@
 # BD_Project
 
-# Nome do Projeto
+# Quartel's Grill
 
-Descrição
+In this project we developed a database management system for a restaurant chain called "Quartel's Grill"
+The objective of this project was to deepen our knowledge of relational databases. 
 
 # Authors
 
